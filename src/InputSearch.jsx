@@ -108,11 +108,11 @@ const InputSearch = () => {
               <div className="filterInput">
                 <img className="mainImages" src={product?.owner.avatar_url} />
                 <div className="text_content">
-                  <h1 className="name">{product?.name?.slice(0, 25)}</h1>
-                  <h2 className="star">{product?.stargazers_count}</h2>
-                  <h3 className="description">
+                  <h3 className="name">{product?.name?.slice(0, 25)}</h3>
+                  <h4 className="star">{product?.stargazers_count}</h4>
+                  <p className="description">
                     {ellipsisCreator(product?.description) || "No Description"}
-                  </h3>
+                  </p>
                   <h3 className="language">
                     {product?.language || "No Language"}
                   </h3>
